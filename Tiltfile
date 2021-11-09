@@ -42,3 +42,5 @@ local_resource(
     serve_cmd='kubectl port-forward --namespace default svc/postgresql 5432:5432',
     resource_deps=["postgresql-postgresql"]
 )
+
+k8s_yaml('k8s/ethereum/ethereum.yaml')
